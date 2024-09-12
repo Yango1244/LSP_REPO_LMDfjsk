@@ -15,17 +15,11 @@ public class WordCounting {
 
 	public static void main(String[] args) {
 		HashMap<String, Integer> words = new HashMap<String, Integer>();
-
-		// open text file
 		File testFile = new File("src/org/howard/edu/lsp/assignment2/words.txt");
 		try {
 			Scanner myScanner = new Scanner(testFile);
-
-			// iterate through each word in text file and converts them to lowercase
 			while (myScanner.hasNext()) {
 				String s = myScanner.next().toLowerCase();
-
-				// create list of punctuations and record last character in string
 				List<Character> punctuations = Arrays.asList(',', '!', '?', '.', ':', ';');
 				char lastChar = s.charAt(s.length() - 1);
 
@@ -49,7 +43,6 @@ public class WordCounting {
 				}
 			}
 		} catch (FileNotFoundException e) {
-			// error if file not found
 			System.out.println("File not found");
 		}
 
