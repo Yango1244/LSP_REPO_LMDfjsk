@@ -8,6 +8,14 @@ public class Book {
 	private String ISBN;
 	private int yearPublished;
 	
+	/**
+     * Constructor for a new book
+     *
+     * @param title, the book title
+     * @param author, the book author
+     * @param ISBN, the book ISBN
+     * @param yearPublished, the book publishing year
+     */
 	public Book(String title, String author, String ISBN, int yearPublished) {
 		this.title = title;
 		this.author = author;
