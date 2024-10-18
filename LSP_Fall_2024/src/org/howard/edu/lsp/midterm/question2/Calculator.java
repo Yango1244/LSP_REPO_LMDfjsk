@@ -1,6 +1,7 @@
 package org.howard.edu.lsp.midterm.question2;
 
 public class Calculator {
+	// 
 
 	/**
      * Print the sum of two integers.
